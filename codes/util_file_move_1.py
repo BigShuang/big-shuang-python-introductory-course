@@ -1,8 +1,13 @@
+"""
+将img文件夹的图片名称序号，
+批量往前或往后移动指定数值
+"""
+
 import os
 import time
 
 
-TIME_SPACE = 0.05
+TIME_SPACE = 0.6
 
 
 def get_valid_path(root, folder):
@@ -46,5 +51,5 @@ def move(folder, start, step):
 if __name__ == '__main__':
     folder_path = get_valid_path("../", "imgs/0")
     start = (2, 11)
-    step = 1
+    step = -3
     move(folder_path, start, step)
