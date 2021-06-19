@@ -1,4 +1,18 @@
 import os
+import time
+
+
+TIME_SPACE = 0.05
+
+
+def get_valid_path(root, folder):
+    if os.path.exists(folder):
+        return folder
+
+    if os.path.exists(root+folder):
+        return root + folder
+
+    raise Exception("Not Found Folder: %s, %s" % (root, folder))
 
 
 def move(folder, start, step):
@@ -23,11 +37,14 @@ def move(folder, start, step):
         op = os.path.join(folder, old_name)
         np = os.path.join(folder, new_name)
         os.rename(op, np)
+        print("rename: %s->%s"%(op, np))
+        time.sleep(TIME_SPACE)
 
     print("Move OK!")
 
+
 if __name__ == '__main__':
-    folder = "imgs/0"
+    folder_path = get_valid_path("../", "imgs/0")
     start = (2, 11)
     step = 1
-    move(folder, start, step)
+    move(folder_path, start, step)
