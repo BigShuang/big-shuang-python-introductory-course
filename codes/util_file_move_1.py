@@ -50,6 +50,6 @@ def move(folder, start, step):
 
 if __name__ == '__main__':
     folder_path = get_valid_path("../", "imgs/0")
-    start = (2, 11)
-    step = -3
+    start = (3, 11)
+    step = -1
     move(folder_path, start, step)
