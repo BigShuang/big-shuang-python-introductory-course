@@ -12,3 +12,8 @@ windows 安装
 https://windowsreport.com/uninstall-atom-windows/
 
 https://stackoverflow.com/questions/29606833/how-to-uninstall-atom-text-editor-on-windows
+
+
+第一章习题参考:
+[https://www.w3resource.com/python-exercises/](https://www.w3resource.com/python-exercises/)
+[https://pynative.com/python-exercises-with-solutions/](https://pynative.com/python-exercises-with-solutions/)
