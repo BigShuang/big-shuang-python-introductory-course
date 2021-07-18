@@ -40,6 +40,6 @@ def merge_md(folder, title):
 
 
 if __name__ == '__main__':
-    folder = "contents/0"
-    title = "准备工作 安装Python和IDE "
+    folder = "contents/1"
+    title = "第一章 从计算开始"
     merge_md(folder, title)
