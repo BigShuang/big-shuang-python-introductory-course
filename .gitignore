@@ -3,6 +3,7 @@
 *.pdf
 output/
 merge_all.md
+*temp*.*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
