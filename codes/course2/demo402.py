@@ -1,20 +1,12 @@
-scores = {
-    "A": (90, 80, 85),
-    "B": (80, 87, 86),
-    "C": (85, 90, 90)
+times = 51
+circles = times // 4
+direction_index = times % 4
+directions = {
+    0: "north",
+    1: "west",
+    2: "south",
+    3: "east",
 }
 
-
-name = "A"
-score_a = scores[name]
-print("name: %s, language: %s, math: %s, english: %s." %
-      (name, score_a[0], score_a[1], score_a[2]))
-
-scores["D"] = (80, 85, 85)
-
-for name in scores:
-    s1, s2, s3 = scores[name]
-    s = s1 + s2 + s3
-    print("%s: language=%s, math=%s, english=%s, sum=%s." %
-          (name, s1, s2, s3, s))
-
+direction = directions[direction_index]
+print('Xiao Ming faces %s, turns %s circles.'%(direction, circles))
