@@ -17,3 +17,9 @@ https://stackoverflow.com/questions/29606833/how-to-uninstall-atom-text-editor-o
 第一章习题参考:
 [https://www.w3resource.com/python-exercises/](https://www.w3resource.com/python-exercises/)
 [https://pynative.com/python-exercises-with-solutions/](https://pynative.com/python-exercises-with-solutions/)
+
+
+## REFER:
+- https://realpython.com/python-practice-problems/
+- https://codingbat.com/python
+- https://www.practicepython.org/

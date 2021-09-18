@@ -23,10 +23,12 @@
 ### [4 练习](./contents/2/4.md)
 
 ## 第三章 流程控制: 条件与循环
-### 1 布尔值
-### 2 条件判断: if...else
-### 3 循环: for、while
-### 4 情景实例
+### [1 布尔值](./contents/3/1.md)
+### [2 条件判断: if...elif..else](./contents/3/2.md)
+### [3 循环: for、while](./contents/3/3.md)
+### [4 实践例题](./contents/3/4.md)
+### [5 习题](./contents/3/5.md)
+### [6 答案](./contents/3/6.md)
 
 ## 第四章 函数
 
