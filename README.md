@@ -57,8 +57,8 @@ description: 大爽python入门公开课
 ## 第四章 函数
 ### [1 初识函数Function](./contents/4/1.md)
 ### [2 函数返回值 return](./contents/4/2.md)
-### 3 函数传参*args、**kwargs
-### 4 实践使用
+### [3 函数传参 形参、实参 default、*args、**kwargs](./contents/4/3.md)
+### [4 实践使用](./contents/4/4.md)
 ### 5 习题
 ### 6 答案
 
@@ -72,7 +72,7 @@ description: 大爽python入门公开课
 ## 上篇总结、拓展、实践、练习
 ### 1 容器进阶 嵌套
 ### 2 函数进阶 自建函数 与匿名函数
-
+### 3 对象进阶 可变不可变
 
 ### 实例演练 控制台 —— 简单购物系统
 ### 实例演练 控制台 —— 游戏文本互动
