@@ -40,6 +40,6 @@ def merge_md(folder, title):
 
 
 if __name__ == '__main__':
-    folder = "contents/2"
-    title = "第二章 容器"
+    folder = "contents/3"
+    title = "第三章 流程控制: 条件与循环"
     merge_md(folder, title)
