@@ -58,9 +58,10 @@ description: 大爽python入门公开课
 ### [1 初识函数Function](./contents/4/1.md)
 ### [2 函数返回值 return](./contents/4/2.md)
 ### [3 函数传参 形参、实参 default、*args、**kwargs](./contents/4/3.md)
-### [4 实践使用](./contents/4/4.md)
-### 5 习题
-### 6 答案
+### [4 深入了解`print`](./contents/4/4.md)
+### [5 实践使用](./contents/4/5.md)
+### 6 习题
+### 7 答案
 
 ## 第五章 输入输出与文件读写
 ### 1 输入输出

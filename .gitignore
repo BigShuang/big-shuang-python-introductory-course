@@ -2,6 +2,7 @@
 
 *.pdf
 output/
+records/
 merge_all.md
 *temp*.*
 
