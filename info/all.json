@@ -2,6 +2,5 @@
   "project": "H:\\github projects\\big-shuang-python-introductory-course",
   "git_info": "info\\git_info",
   "config": "info\\config.json",
-  "refresh_catalog": true,
-  "refresh_all": true
+  "refresh_catalog": false
 }
