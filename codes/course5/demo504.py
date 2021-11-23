@@ -1,22 +1,20 @@
 SCORE_FILE = "scores.txt"
 
 MAIN_MENU = """---------------
-Welcome!
-You can enter `f`, `u`, `l` or `e`.
-The meaning is as follows
-- f: filter student by a score
-- u: update score
-- l: show all student with scores
-- e: exit
-Enter your command: """
-INVALID = "Invalid Input."
+欢迎！你可以输入`f`、`u`、`l`、`e`命令, 意义如下:
+- f: 查询大于等于某成绩的所有学生
+- u: 修改学生分数
+- l: 展示所有学生分数
+- e: 退出
+请输入命令: """
+INVALID = "输入无效"
 
-FILTER_MENU1 = "Enter filter score: "
-UPDATE_MENU1 = "Enter student name: "
-UPDATE_MENU2 = "Enter student score: "
-UPDATE_MENU3 = "Updated successfully."
-SHOW_MENU1 = "Students Scores: "
-EXIT_MENU = "Bye"
+FILTER_MENU1 = "请输入查询分: "
+UPDATE_MENU1 = "请输入学生名字: "
+UPDATE_MENU2 = "请输入学生分数: "
+UPDATE_MENU3 = "修改成功。"
+SHOW_MENU1 = "学生成绩: "
+EXIT_MENU = "再见"
 
 
 def read_scores(score_file):
@@ -97,6 +95,7 @@ def main(score_file):
             break
         else:
             print(INVALID)
+
 
 
 main(SCORE_FILE)

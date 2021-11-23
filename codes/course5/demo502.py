@@ -1,60 +1,42 @@
 SCORE_FILE = "scores.txt"
 
-MAIN_MENU = """Welcome!
-You can enter `f`, `c`, `u`, `l` or `e`.
+MAIN_MENU = """---------------
+Welcome!
+You can enter `f`, `u`, `l` or `e`.
 The meaning is as follows
 - f: filter student by a score
-- c: create score
 - u: update score
 - l: show all student with scores
 - e: exit
 Enter your command: """
 INVALID = "Invalid Input."
 
+FILTER_MENU1 = "Enter filter score: "
+UPDATE_MENU1 = "Enter student name: "
+UPDATE_MENU2 = "Enter student score: "
+UPDATE_MENU3 = "Updated successfully."
+SHOW_MENU1 = "Students Scores: "
+EXIT_MENU = "Bye"
+
 def read_scores(score_file):
-    return {}
-
-
-SCORES = read_scores(SCORE_FILE)
-
-
-def filter_score():
     pass
 
 
-def create_score():
+def show_all(scores, filter_value=0):
     pass
 
 
-def update_score():
+def filter_score(scores):
     pass
 
 
-def show_all():
+def update_score(scores):
     pass
 
 
-def save():
+def save(score_file, scores):
     pass
 
 
-def main():
-    while True:
-        print(MAIN_MENU)
-        cmd = input()
-        if cmd == "f":
-            filter_score()
-        elif cmd == "c":
-            create_score()
-        elif cmd == "u":
-            update_score()
-        elif cmd == "l":
-            show_all()
-        elif cmd == "e":
-            save()
-            break
-        else:
-            print(INVALID)
-
-
-main()
+def main(score_file):
+    pass
