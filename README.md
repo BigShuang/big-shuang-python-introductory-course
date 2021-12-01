@@ -72,7 +72,7 @@ description: 大爽python入门公开课
 ### [6 习题](./contents/5/6.md)
 ### [7 答案](./contents/5/7.md)
 
-## 第六章 中期小结、拓展、实践、练习
+## 第六章 中期小结之拓展演示
 ### [1 变量进阶 可变`mutable`、不可变`immutable`](./contents/6/1.md)
 ### [2 变量进阶 局部变量`local`与全局变量`global`](./contents/6/2.md)
 ### [3 容器进阶 生成式](./contents/6/3.md)
