@@ -1,6 +1,7 @@
 WELCOME = "Welcome to light out flip game!"
 ENTER  = "Select one lamp to light On/Off (Enter the index, start from 0): "
 WIN = "Great!You light up all the lights"
+INVALID = "Invalid input."
 
 
 def get_lights(light_file):
@@ -33,7 +34,6 @@ def check_all_on(lights):
 
 def main(light_file):
     lights = get_lights(light_file)
-    print(lights)
 
     print(WELCOME)
     while True:
@@ -53,7 +53,7 @@ def main(light_file):
                 switch_light(lights, li+1)
                 continue
 
-        print()
+        print(INVALID)
 
 
 light_file = "lights.txt"
