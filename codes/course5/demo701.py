@@ -1,58 +1,3 @@
-## 思路与答案
-### 改动
-#### 开头的字符串常量
-修改`MAIN_MENU`如下
-```python
-MAIN_MENU = """---------------
-Welcome!
-You can enter `c`, `f`, `u`, `l` or `e`.
-The meaning is as follows
-- c: create student score
-- f: filter student by a score
-- u: update score
-- l: show all student with scores
-- e: exit
-Enter your command: """
-```
-新增字符串如下
-```python
-CREATE_MENU1 = "Enter new student's name: "
-CREATE_MENU2 = "Enter new student's score: "
-CREATE_MENU_R1 = "The name already exists and cannot be created."
-CREATE_MENU_R2 = "Successfully added student scores."
-```
-#### 主函数
-在`if`和`elif`之间，新增一个`elif`如下
-```python
-elif cmd == "c":
-    create_score(scores)
-```
-#### 功能函数`create_score`
-新增函数如下
-```python
-def create_score(scores):
-    while True:
-        name = input(CREATE_MENU1)
-        if name in scores:
-            print(CREATE_MENU_R1)
-        else:
-            break
-
-    while True:
-        score = input(CREATE_MENU2)
-        if score.isdigit():
-            score = int(score)
-            if 0 <= score <= 100:
-                scores[name] = score
-                print(CREATE_MENU_R2)
-                return
-
-        print(INVALID)
-```
-
-### 总代码
-#### 英文版
-```python
 SCORE_FILE = "scores.txt"
 
 MAIN_MENU = """---------------
@@ -183,36 +128,5 @@ def main(score_file):
             print(INVALID)
 
 
+
 main(SCORE_FILE)
-```
-#### 中文版
-将前面的文本常量改掉就行，如下
-```python
-SCORE_FILE = "scores.txt"
-
-MAIN_MENU = """---------------
-欢迎！你可以输入`c`、`f`、`u`、`l`、`e`命令, 意义如下:
-- c: 新建学生
-- f: 查询大于等于某成绩的所有学生
-- u: 修改学生分数
-- l: 展示所有学生分数
-- e: 退出
-请输入命令: """
-INVALID = "输入无效"
-
-FILTER_MENU1 = "请输入查询分: "
-UPDATE_MENU1 = "请输入学生名字: "
-UPDATE_MENU2 = "请输入学生分数: "
-UPDATE_MENU3 = "修改成功。"
-
-CREATE_MENU1 = "请输入新增学生姓名: "
-CREATE_MENU2 = "请输入新增学生分数: "
-CREATE_MENU_R1 = "名字已存在，无法创建。"
-CREATE_MENU_R2 = "成功新增学生分数。"
-
-
-SHOW_MENU1 = "学生成绩: "
-EXIT_MENU = "再见"
-```
-
-后面的逻辑代码是一样的，不用改。
