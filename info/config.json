@@ -3,5 +3,15 @@
   "imgs": "imgs",
   "project-name": "big-shuang-python-introductory-course",
   "book-name": "大爽Python入门教程",
-  "layer": "two-linked"
+  "layer": "two-linked",
+  "chapters": {
+      "0": "准备工作 安装Python和IDE",
+      "1": "从计算开始",
+      "2": "容器",
+      "3": "流程控制: 条件与循环",
+      "4": "函数",
+      "5": "输入输出与文件读写",
+      "6": "中期小结 拓展演示",
+      "7": "类Class与对象Object"
+  }
 }
