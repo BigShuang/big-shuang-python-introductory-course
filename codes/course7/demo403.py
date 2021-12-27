@@ -44,7 +44,7 @@ class Player(Person):
         exp = enemy.drop_exp()
         self.exp[0] += enemy.drop_exp()
         print("Defeat enemy: %s. Gain exp: %s. Current exp: %s / %s. Left hp: %s" %
-              (enemy.__class__.__name__, exp, self.exp[0], self.exp[1] ,self.hp))
+              (enemy.__class__.__name__, exp, self.exp[0], self.exp[1], self.hp))
 
         if self.exp[0] >= self.exp[1]:
             self.exp[0] -= self.exp[1]  # 升级时扣除升级需要的经验
@@ -67,7 +67,6 @@ class Player(Person):
         print("You lost. %s's left hp: %s" % (enemy.__class__.__name__, enemy.hp))
 
 
-
 class Enemy(Person):
     def __init__(self, base=1):
         hp, attack, defence = 50 * base, 10 * base, 5 * base
@@ -82,7 +81,7 @@ class Enemy(Person):
 class AdvancedEnemy(Enemy):
     def __init__(self):
         super().__init__(base=2)
-    
+
     def hit(self, other):
         damage = self.attack
         if damage > 0:
@@ -100,6 +99,13 @@ class Boss(Enemy):
             self.hp += damage
 
 
+enemy_map = {
+    "e": Enemy,
+    "a": AdvancedEnemy,
+    "b": Boss,
+}
+
+
 class Game:
     def __init__(self):
         self.player = Player()
@@ -112,7 +118,7 @@ class Game:
             cmd = cmd.lower()
             if cmd == "s":
                 self.player.show_info()
-            elif cmd == "e":
+            elif cmd == "q":
                 print("Bye")
                 return
             else:
@@ -120,17 +126,13 @@ class Game:
 
     def handle_commands(self, cmd):
         for c in cmd:
-            if c == "e":
-                enemy = Enemy()
-            elif c == "a":
-                enemy = AdvancedEnemy()
-            elif c == "b":
-                enemy = Boss()
+            if c in enemy_map:
+                enemy_class = enemy_map[c]
+                enemy = enemy_class()
+                self.fight(enemy)
             else:
                 print("Invalid Input.")
                 return
-
-            self.fight(enemy)
 
     def fight(self, enemy):
         while True:
