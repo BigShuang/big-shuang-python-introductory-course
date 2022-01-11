@@ -76,7 +76,7 @@ description: 大爽python入门公开课
 ### [4 实践演示 控制台版本——简易回合战斗](./contents/7/4.md)
 ### [5 异常处理 try ... except Exception](./contents/7/5.md)
 
-## 第八章 Library 库
+## 第八章 库 Library
 ### 1 导入`import`
 ### 2 python 标准库
 ### 3 python 第三方库
