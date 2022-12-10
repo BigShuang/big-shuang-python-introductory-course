@@ -31,11 +31,38 @@ def get_ttt_winner(board):
     return "N"
 
 
-board = [
+# board1 = [
+#     ["X", "X", "X"],
+#     ["O", "X", " "],
+#     ["O", " ", "O"],
+# ]
+
+# r = get_ttt_winner(board1)
+# print(r)
+
+# r1 = check_bunch_match(["X", "X", "X"], "X")
+# r2 = check_bunch_match(["O", " ", "O"], "O")
+# r3 = check_bunch_match(["X", "X", "X"], "O")
+# r4 = check_bunch_match(["X", "X", "O"], "X")
+# print(r1, r2, r3, r4)
+
+board1 = [
     ["X", "X", "X"],
     ["O", "X", " "],
     ["O", " ", "O"],
 ]
+print(get_ttt_winner(board1))
 
-r = get_ttt_winner(board)
-print(r)
+board2 = [
+    ["X", "O", "X"],
+    ["O", "X", " "],
+    ["O", "X", "O"],
+]
+print(get_ttt_winner(board2))
+
+board3 = [
+    ["X", " ", "X"],
+    ["O", "X", "X"],
+    ["O", "O", "O"],
+]
+print(get_ttt_winner(board3))
