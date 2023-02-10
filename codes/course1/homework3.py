@@ -1,6 +1,5 @@
-count = 0
-for i in range(100):
-    if i % 3 == 0:
-        count += 1
+layer = 5
 
-print(count)
+for i in range(layer):
+    s = " " * (layer - 1 -i) + "A"*(2*i+1)
+    print(s)
