@@ -7,7 +7,6 @@ shop_cart = [
     ("banana", 25),
 ]
 
-
 shop_dict = {}
 for item in shop_cart:
     name, weight = item
