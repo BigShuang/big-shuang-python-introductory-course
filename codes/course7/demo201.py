@@ -6,33 +6,25 @@ Used = "The place is already occupied."
 
 class Game:
     def __init__(self):
-        self.board = []
-        self.current = "X"
-
-    def generate_board(self):
         pass
 
     def show_board(self):
         pass
 
     def check_bunch_match(self, bunch):
-        return False
+        pass
 
     def check_win(self):
-        return False
+        pass
 
-    def place(self, ri, ci):
-        return True
-
-    def turn(self):
+    def turn_player(self):
         pass
 
     def parse_rc(self, cmd):
-        return -1, -1
+        pass
 
     def run(self):
-        while True:
-            pass
+        pass
 
 
 game = Game()

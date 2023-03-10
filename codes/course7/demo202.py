@@ -6,10 +6,8 @@ Used = "The place is already occupied."
 
 class Game:
     def __init__(self):
-        self.generate_board()
         self.current = "X"
 
-    def generate_board(self):
         self.board = [
             [" " for ci in range(3)] for ri in range(3)
         ]
@@ -57,14 +55,7 @@ class Game:
 
         return False
 
-    def place(self, ri, ci):
-        if self.board[ri][ci] != " ":
-            return False
-
-        self.board[ri][ci] = self.current
-        return True
-
-    def turn(self):
+    def turn_player(self):
         if self.current == "X":
             self.current = "O"
         else:
@@ -91,14 +82,14 @@ class Game:
             cmd = input(ENTER % self.current)
             ri, ci = self.parse_rc(cmd)
             if ri >= 0:
-                res = self.place(ri, ci)
-                if res:
+                if self.board[ri][ci] == " ":
+                    self.board[ri][ci] = self.current
                     if self.check_win():
                         self.show_board()
                         print("%s win!" % self.current)
                         return
 
-                    self.turn()
+                    self.turn_player()
                 else:
                     print(Used)
             else:
