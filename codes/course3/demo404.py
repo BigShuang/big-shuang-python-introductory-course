@@ -5,7 +5,7 @@ s = 0
 for i in range(len(lst)):
     item = lst[i]
     if item >= 0:
-        weight = lst[i]
+        weight = weights[i]
         v = item * weight
         s += v
 
