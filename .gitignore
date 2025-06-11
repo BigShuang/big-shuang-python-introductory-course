@@ -5,6 +5,7 @@ output/
 records/
 merge_all.md
 *temp*.*
+.obsidian
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

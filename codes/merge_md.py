@@ -18,8 +18,8 @@ def merge_md(folder, title):
     files = os.listdir(folder)
 
     text = yaml
-    text += "# %s\n " % title
-    text += paging+ "\n"
+    text += "# %s\n" % title
+    text += paging+ "\n\n"
     for file in files:
         name, suffix = os.path.splitext(file)
         if name.isdigit():
@@ -30,7 +30,7 @@ def merge_md(folder, title):
                 ft = f.read()
 
             text += file_title + ft[2:] + "\n"
-            text += paging+ "\n"
+            text += paging+ "\n\n"
 
     out = os.path.join(folder, "merge_all.md")
     with open(out, "w", encoding="utf-8") as f:
@@ -40,6 +40,6 @@ def merge_md(folder, title):
 
 
 if __name__ == '__main__':
-    folder = "contents/3"
-    title = "第三章 流程控制: 条件与循环"
+    folder = "contents/1"
+    title = "第一章 从计算开始"
     merge_md(folder, title)
