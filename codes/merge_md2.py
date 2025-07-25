@@ -63,6 +63,6 @@ def merge_md(folder, title):
     print("Merge Done")
 
 if __name__ == '__main__':
-    folder = "contents/1"
-    title = "第一章 从计算开始"
+    folder = "contents/3"
+    title = "第三章 流程控制: 条件与循环"
     merge_md(folder, title)

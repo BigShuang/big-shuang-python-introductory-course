@@ -81,8 +81,8 @@ def add_bookmarks(pdf_path, output_path, titles):
 
 
 # Example usage
-pdf_path = "./output/1.pdf"
-output_path = "./output/c1.pdf"
+pdf_path = "./output/3.pdf"
+output_path = "./output/c3.pdf"
 
 titles = detect_titles(pdf_path)
 add_bookmarks(pdf_path, output_path, titles)
